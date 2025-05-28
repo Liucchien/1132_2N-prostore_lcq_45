@@ -4,6 +4,7 @@ import { APP_NAME } from '@/lib/constants';
 import { EllipsisVertical, ShoppingCart, UserIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Modetoggle_45 from './mode-toggle_45';
+import Menu_xx from './menu_xx';
 
 const Header_45 = () => {
   return (
@@ -20,7 +21,8 @@ const Header_45 = () => {
             />
           </Link>
         </div>
-        <div className='flex justify-end gap-3'>
+        <Menu_xx />
+        {/* <div className='flex justify-end gap-3'>
           <Modetoggle_45 />
           <Button asChild variant='outline'>
             <Link href='/cart_45'>
@@ -32,7 +34,7 @@ const Header_45 = () => {
               <ShoppingCart /> Sign in
             </Link>
           </Button>
-        </div>
+        </div> */}
       </div>
     </header>
   );
